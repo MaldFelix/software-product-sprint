@@ -2,18 +2,127 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Félix Maldonado Torres Portfolio</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   </head>
+
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+        <div class="container" style="max-width: 1000;">
+        <!-- Navigation panel part-->
+        <nav class ="navbar">
+            <div class="max-width">
+            <div class="logo"><a href="#" style="text-decoration: none;">Félix Maldonado Portfolio</a></div>
+              <ul class="menu">
+                <li><a href="#" style="text-decoration: none">About me</a></li>
+                <li><a href="#" style="text-decoration: none;">Projects</a></li>
+                <li><a href="#" style="text-decoration: none;">Gallery</a></li>
+                <li><a href="#" style="text-decoration: none;">Contact me</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <!-- About me section-->
+        <div class="home" id="home">
+            <div class="max-width">
+                <div class="content">
+                    <center>
+                    <img src="Images/Picture1.jpg" alt="Félix J. Maldonado" width="1000" height="650" style="margin-top: 20px">
+                    <div class="T1" textsize="18px" textalign="right">Hi eveyone, my name is Félix Maldonado Torres and welcome into my personal portfolio.</p>
+                        <h3>ABOUT ME</h3>
+                        <p style="border:3px; border-style: solid; border-color: black; padding: 1em;" textsize="18px" text-align="justified">I'm Félix J. Maldonado Torres and I am 21 years old. 
+                            Currently I live in the south of Puerto Rico. 
+                            I'm a senior student in Computer Engineering at the Interamerican University of Puerto Rico, Bayamón Campus. 
+                            Since I was a child I was a very curious person using my siblings computers finding a way to know more about how computers work. 
+                            Over the past years, I've been part of projects that showed me the importance of investing time in doing researchs to expand the knowledge about these topics. 
+                            A thing that can distinguished me is that no matter what obstacles are in my journey I find the best solution integrating a positive attitude.</p>
+
+                        <p style="border:3px; border-style: solid; border-color:black; padding: 1em;" textsize="18px" text-align="justified">
+                            From my perspective, the first thing that comes into my mind about the aspects that makes me different are my positive mindse and the empathy that allows me to help other people when they need it. 
+                            In the freetime I usually love to workout and to play videogames on my PC. As shown below these are some of my favorite things:
+                        </p>
+
+                        <a href="https://www.nba.com/"><hr><br>Favorite Sport
+                        <img src="Images/basketball.jpg" height="150" width="300" style="margin-top: 5px;" alt="Basketball">
+                        </a>
+
+                        <a href="https://www.viz.com/naruto"><hr><br>Favorite anime series
+                        <img src="Images/naruto.jpg" height="150" width="300" style="margin-top: 5px;" alt="Naruto">
+                        </a>
+                        
+                        <a href="https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/"><hr><br>Favorite food
+                        <img src="Images/lasagna.jpg" height="150" width="300" style="margin-top: 5px;" alt="Lasagna">
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Projects Section-->
+        <div class="projects" id="projects">
+            <div class="max-width">
+                <div class="content">
+                    <center>
+                        <h3>PROJECTS</h3>
+                           <h3 style="text-align:left;">Home Automation System</h3>
+                           <p textsize="18px">The project was to perform a design of an ergonomic system implementing using the knowledge of Electrical and Computer Engineering implemented by the language of Arduino. 
+                               I designed a home automation system using a specific connections of sensors and actuators that performs some processes to make a more comfortable life to the users.</p>
+
+                           <h3 style="text-align:left;"> Cache Memory Simulator </h3>
+                            <p textsize="18px">The Cache Memory Simulator recreates a simulation of cache using the MIPS assembly language utilizing the specifications established by the professor. 
+                                The purpose of the project was to allocate some random memory directions into the code using a memory size of 32, mapping function Fully Associative and FIFO replacement algorithm.</p>
+
+                           <h3 style="text-align:left;">Faculty Evaluation System</h3>
+                            <p textsize="18px">The Faculty Evaluation System involved to elaborate a system with integrated GUI interface using Java language. 
+                                The structure of the Software consisted of a connection between some GUI interfaces with integrated database and a logical code. </p>
+                        </center>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery section -->
+        <div class="gallery" id="projects">
+            <div class="max-width">
+                <div class="content">
+                    <hr>
+                    <center>
+                        <h3>GALLERY SECTION</h3>
+                        <a href="gallery.html" class>
+                            <img src="Images/gallery.png" height="200" width="300" alt="GALLERY">
+                        </a>
+
+                    </center>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact me section in personal portfolio -->
+        <div class="contact" id="contact">
+            <div class="max-width">
+                <div class="content">
+                    <hr>
+                    <center>
+                        <h3>CONTACT ME</h3>
+                        <a href="mailto:felixjmt@gmail.com">
+                            <img src="Images/MAIL.jpg" height="100" width="100" alt="Mail">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/f%C3%A9lix-j-maldonado/">
+                            <img src="Images/LINKEDIN.png" height="100" width="100" alt="LinkedIn">
+                        </a>
+
+                        <a href="https://github.com/MaldFelix">
+                            <img src="Images/GITHUB.png" height="100" width="100" alt="GitHub">
+                        </a>
+
+                    </center>
+                </div>
+            </div>
+        </div>
+
+     </div>
   </body>
 </html>
