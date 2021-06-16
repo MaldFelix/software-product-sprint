@@ -10,9 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/hello")
 public class HelloWorldServlet extends HttpServlet {
 
-  @Override
+    private static final long serialVersionUID = 1L;
+    private int helloCount=0;
+
+    @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    helloCount++;
+
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Hello world!</h1>");
+    response.getWriter().println("<center><h1>Hello Félix Maldonado!</h1></center>");
+    response.getWriter().println("<center><p>This page has been watched "+ helloCount + "times. </p></center>");
   }
 }
