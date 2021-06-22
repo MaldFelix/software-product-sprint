@@ -6,28 +6,35 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
 
   </head>
+
   <body>
+      <div style="background-image: url('Images/Picture5.jpeg');">
         <div class="container" style="max-width: 1000;">
-        <!-- Navigation panel part-->
+
+        <!-- Navigation panel part in website-->
         <nav class ="navbar">
             <div class="max-width">
             <div class="logo"><a href="#" style="text-decoration: none;">Félix Maldonado Portfolio</a></div>
               <ul class="menu">
-                <li><a href="#" style="text-decoration: none">About me</a></li>
-                <li><a href="#" style="text-decoration: none;">Projects</a></li>
-                <li><a href="#" style="text-decoration: none;">Gallery</a></li>
-                <li><a href="#" style="text-decoration: none;">Contact me</a></li>
+                <li><a href="#home" style="text-decoration: none">About me</a></li>
+                <li><a href="#projects" style="text-decoration: none;">Projects</a></li>
+                <li><a href="#gallery" style="text-decoration: none;">Gallery</a></li>
+                <li><a href="#contact" style="text-decoration: none;">Contact me</a></li>
             </ul>
             </div>
         </nav>
+        <br>
 
-        <!-- About me section-->
+        <!-- About me section in website-->
         <div class="home" id="home">
             <div class="max-width">
                 <div class="content">
                     <center>
+                    <br><br>
                     <img src="Images/Picture1.jpg" alt="Félix J. Maldonado" width="1000" height="650" style="margin-top: 20px">
                     <div class="T1" textsize="18px" textalign="right">Hi eveyone, my name is Félix Maldonado Torres and welcome into my personal portfolio.</p>
                         <h3>ABOUT ME</h3>
@@ -43,24 +50,26 @@
                             In the freetime I usually love to workout and to play videogames on my PC. As shown below these are some of my favorite things:
                         </p>
 
-                        <a href="https://www.nba.com/"><hr><br>Favorite Sport
                         <img src="Images/basketball.jpg" height="150" width="300" style="margin-top: 5px;" alt="Basketball">
-                        </a>
-
-                        <a href="https://www.viz.com/naruto"><hr><br>Favorite anime series
-                        <img src="Images/naruto.jpg" height="150" width="300" style="margin-top: 5px;" alt="Naruto">
-                        </a>
+                        <a href="https://www.nba.com/">Favorite Sport</a>
+                        <br>
                         
-                        <a href="https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/"><hr><br>Favorite food
+                        <img src="Images/naruto.jpg" height="150" width="300" style="margin-top: 5px;" alt="Naruto">
+                        <a href="https://www.viz.com/naruto">Favorite anime series</a>
+                        <br>
+                        
                         <img src="Images/lasagna.jpg" height="150" width="300" style="margin-top: 5px;" alt="Lasagna">
-                        </a>
+                        <a href="https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/">Favorite food</a>
+                        <br>
+                        <hr>
                     </center>
                 </div>
             </div>
         </div>
         <hr>
 
-        <!-- Projects Section-->
+        <!-- Projects Section in website -->
+        <section class="projects" id="projects">
         <div class="projects" id="projects">
             <div class="max-width">
                 <div class="content">
@@ -81,8 +90,11 @@
                 </div>
             </div>
         </div>
-        <!-- Gallery section -->
-        <div class="gallery" id="projects">
+        </section>
+
+        <!-- Gallery section in the website -->
+        <section class="galery" id="gallery">
+        <div class="gallery" id="gallery">
             <div class="max-width">
                 <div class="content">
                     <hr>
@@ -96,9 +108,25 @@
                 </div>
             </div>
         </div>
+        </section>
 
+        <!-- Interesting facts section in website -->
+        <div class="fact" id="fact">
+        <center>
+        <h3>Click here to get a random interesting fact about Naruto: </h3>
+        <button onclick="addRandomGreeting()">Naruto fact</button>
+        <br>
+        <div id="fact-container"></div>
 
-        <!-- Contact me section in personal portfolio -->
+         <!-- Displaying the actual time of the server -->
+        <p>Press this button to see a display of the server's of current date.</p>
+            <button onclick="displayTime();">Show date</button>
+        <p id="date-container"></p>
+        </center> 
+        </div>
+
+        <!-- Contact me section in website -->
+        <section class="contact" id="contact">
         <div class="contact" id="contact">
             <div class="max-width">
                 <div class="content">
@@ -106,25 +134,23 @@
                     <center>
                         <h3>CONTACT ME</h3>
                         <a href="mailto:felixjmt@gmail.com">
-                            <img src="Images/MAIL.jpg" height="100" width="100" alt="Mail">
+                            <img src="Images/Mail.png" height="100" width="100" alt="Mail">
                         </a>
 
                         <a href="https://www.linkedin.com/in/f%C3%A9lix-j-maldonado/">
-                            <img src="Images/LINKEDIN.png" height="100" width="100" alt="LinkedIn">
+                            <img src="Images/LINKEDIN.png" height="95" width="100" alt="LinkedIn">
                         </a>
 
                         <a href="https://github.com/MaldFelix">
                             <img src="Images/GITHUB.png" height="100" width="100" alt="GitHub">
                         </a>
-
                     </center>
                 </div>
             </div>
-         </div>
-
-         <h3> Testing the SERVLETS</h3>
-         <center><p> PRESS <a href="/hello"> HERE</a> to see the content generated by a servlet.</p></center>
+        </div>
+        </section>
 
         </div>
+     </div>
   </body>
 </html>

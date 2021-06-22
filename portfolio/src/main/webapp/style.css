@@ -1,11 +1,4 @@
 /* CSS CODE FOR PERSONAL PORTFOLIO */
-/* NAVIGATION BAR STYLING */
-.navbar{
-    position: fixed;
-    width: 100%;
-    background: darkgrey;
-    font-family: dosis;
-}
 /* BODY SECTION STYLING */
 body{
     margin: 0;
@@ -17,7 +10,24 @@ body{
     background-color: lightgray;
     font-family: dosis;
 }
+.button{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
 
+/* NAVIGATION BAR STYLING */
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-size: cover;
+    font-family: dosis;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -47,7 +57,11 @@ body{
     font-weight: 500;
     margin-left: 25px;
 }
-/* HOME SECTION STYLING */
+li a:hover{
+    background-color: lightgrey;
+}
+
+/* HOME SECTION */
 .home{
     display: flex;
     text-align: justify;
@@ -60,15 +74,16 @@ body{
 .home .content .max-width{
     margin: auto 0 auto 40px;
     align-items: center;
-     font-family: dosis;
+    font-family: dosis;
 }
 
 .home .content .T1{
     font-size: 22px;
     font-family: dosis;
+    font-style: bold;
 }
-img{
-    border-radius: 50px;
+img{    
+    border-radius: 40px;
     align-items: center;
 }
 
@@ -96,6 +111,9 @@ img{
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  font-size: 22px;
+  font-family: dosis;
+  align-items: center;
 }
 
 /* Hide the images by default */
@@ -180,4 +198,25 @@ h3{
     margin: center;
     text-align: justify;
     text-justify: inter-word;
+}
+.button1{
+    background-color: lightgreen;
+}
+
+/* INTERESTING FACTS SECTION */
+.fact .fact-container{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.fact h3{
+    margin-top: auto;
+    margin: center;
+    text-align: center;
+}
+.fact .button2{
+    background-color: lightgreen;
+}
+.fact .button3{
+    background-color: lightgreen;
 }
